@@ -16,6 +16,7 @@ class OrdersProducts {
 
   order: Order;
 
+  @ManyToOne(() => Product, product => product.order_products)
   product: Product;
 
   product_id: string;
